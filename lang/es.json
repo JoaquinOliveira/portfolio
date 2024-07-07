@@ -8,6 +8,11 @@
   "projects.project3.title": "Creador de Demandas para Estudio Jurídico De Leo",
   "projects.project3.description": "Una herramienta de creación de demandas para el Estudio Jurídico De Leo, siguiendo una metodología similar al Creador de Resoluciones Judiciales. Agiliza el proceso de redacción de documentos legales.",
   "projects.visitProject": "Visitar Proyecto",
+  "projects.project4.title": "Práctica Profesional en Matching",
+  "projects.project4.description": "Participé en una práctica profesional no remunerada en Matching, contribuyendo al desarrollo de una aplicación móvil con React Native para pádel y diversos deportes. Adquirí experiencia práctica en desarrollo de aplicaciones móviles y trabajo en equipo en un entorno profesional.",
+  "projects.project5.title": "CNO - Aplicación Web de Tenis",
+  "projects.project5.description": "Una aplicación web para gestionar torneos de tenis en el Centro Naval de Olivos Club. Permite a los usuarios inscribirse en torneos, darse de baja, ver sus rankings actuales, revisar su historial de partidos y más.",
+    "projects.inDevelopment": "En Desarrollo",
   "contact.title": "Contáctame",
   "contact.name": "Nombre",
   "contact.email": "Correo electrónico",
@@ -34,5 +39,6 @@
   "currentStatus": "Aunque continúo mi labor en el ámbito judicial, estoy 100% comprometido con dar el salto al mundo IT y conseguir mi primer trabajo en este emocionante sector.",
   "contactIntro": "Si quieres contactarme, puedes escribirme a:",
   "email": "jsoliveiran@gmail.com"
+  
 }
 

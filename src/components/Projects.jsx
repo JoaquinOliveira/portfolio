@@ -5,22 +5,38 @@ function Projects() {
     const intl = useIntl();
 
     const projects = [
-      {
-        titleId: 'projects.project1.title',
-        descriptionId: 'projects.project1.description',
-        videoId: 'CjYOaIOrsW0',
-        link: 'https://www.youtube.com/watch?v=CjYOaIOrsW0&ab_channel=jggiampe',
-      },
-      {
-        titleId: 'projects.project2.title',
-        descriptionId: 'projects.project2.description',
-        link: 'https://main--fantastic-narwhal-eba682.netlify.app/',
-      },
-      {
-        titleId: 'projects.project3.title',
-        descriptionId: 'projects.project3.description',
-        link: 'https://estudiodeleo.netlify.app/',
-      },
+        {
+            titleId: 'projects.project1.title',
+            descriptionId: 'projects.project1.description',
+            videoId: 'CjYOaIOrsW0',
+            link: 'https://www.youtube.com/watch?v=CjYOaIOrsW0&ab_channel=jggiampe',
+        },
+        {
+            titleId: 'projects.project2.title',
+            descriptionId: 'projects.project2.description',
+            link: 'https://main--fantastic-narwhal-eba682.netlify.app/',
+        },
+        {
+            titleId: 'projects.project3.title',
+            descriptionId: 'projects.project3.description',
+            link: 'https://estudiodeleo.netlify.app/',
+        },
+        {
+            titleId: 'projects.project4.title',
+            descriptionId: 'projects.project4.description',
+            link: '',
+            tags: ["React Native", "Mobile Development", "Professional Practice"],
+            category: "Mobile Development",
+            status: "Completed"
+        },
+        {
+            titleId: 'projects.project5.title',
+            descriptionId: 'projects.project5.description',
+            link: 'https://github.com/JoaquinOliveira/CNO-T-Web',
+            tags: ["React", "Firebase"],
+            category: "Web Development",
+            status: "In Development"
+        },
     ];
 
     return (
@@ -50,11 +66,18 @@ function Projects() {
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                                     {intl.formatMessage({ id: project.descriptionId })}
                                 </p>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 dark:text-blue-300 hover:underline">
-                                    {project.videoId 
-                                        ? intl.formatMessage({ id: 'projects.watchOnYoutube' })
-                                        : intl.formatMessage({ id: 'projects.visitProject' })}
-                                </a>
+                                {project.link && (
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 dark:text-blue-300 hover:underline">
+                                        {project.videoId
+                                            ? intl.formatMessage({ id: 'projects.watchOnYoutube' })
+                                            : intl.formatMessage({ id: 'projects.visitProject' })}
+                                    </a>
+                                )}
+                                {project.status === "In Development" && (
+                                    <p className="text-yellow-600 dark:text-yellow-400 mt-2 font-semibold">
+                                        {intl.formatMessage({ id: 'projects.inDevelopment' })}
+                                    </p>
+                                )}
                             </div>
                         </div>
                     ))}
